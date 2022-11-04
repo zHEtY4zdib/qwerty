@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>qwerty</title>
+    <script>
+      window.onload = () => 
+      {
+        document.body.innerText = window.localStorage["text"];
+        document.body.addEventListener('keyup', () => { localStorage["text"] = document.body.innerText; } );
+      };
+    </script>
+  </head>
+  <body contenteditable="true" style="font-family:monospace;">
+  </body>
+</html>
